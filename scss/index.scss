@@ -281,3 +281,29 @@ img {
     }
   }
 }
+
+// ===== FEATURES SECTION =====
+.features {
+  &__group {
+    display: grid;
+    gap: 12rem;
+  }
+
+  &__content {
+    display: grid;
+    gap: 3rem;
+
+    &-data,
+    &-img {
+      justify-self: center;
+    }
+
+    &-text {
+      margin-bottom: $margin-2;
+    }
+  }
+
+  &__content:nth-child(1) .features__content-button {
+    background-color: $yellow-color;
+  }
+}

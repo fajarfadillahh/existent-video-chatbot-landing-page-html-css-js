@@ -544,3 +544,23 @@ img {
     }
   }
 }
+
+// ===== CALLBACK SECTION =====
+.callback {
+  &__container {
+    gap: 3rem;
+  }
+
+  &__img,
+  &__data {
+    justify-self: center;
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+  }
+
+  &__button {
+    background-color: $yellow-color;
+  }
+}

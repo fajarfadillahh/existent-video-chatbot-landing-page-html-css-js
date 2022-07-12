@@ -14,3 +14,27 @@ const showMenu = (menuId, toggleId, closeId) => {
   }
 };
 showMenu("header-menu", "header-toggle", "header-close");
+
+// ===== TESTIMONIAL SWIPER =====
+let swiper = new Swiper(".testimonial-swiper", {
+  centeredSlides: true,
+  slidesPerView: 1.1,
+  loop: true,
+  spaceBetween: 30,
+  autoplay: {
+    duration: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    968: {
+      slidesPerView: 3,
+    },
+  },
+});

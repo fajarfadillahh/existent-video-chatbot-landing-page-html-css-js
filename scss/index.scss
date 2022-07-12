@@ -307,3 +307,67 @@ img {
     background-color: $yellow-color;
   }
 }
+
+// ===== INTEGRATES SECTION =====
+.integrates {
+  &__bg {
+    padding: 7rem 0;
+    background-color: rgba($color: #f16e6e, $alpha: 0.1);
+  }
+
+  &__container {
+    gap: 3rem;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.8fr));
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  &__content {
+    display: grid;
+    gap: 1.2rem;
+    padding: 2rem;
+    background-color: $white-color;
+    border-radius: 20px;
+
+    &-text {
+      font-size: 15px;
+      color: $grey-color;
+      line-height: $leading-text;
+
+      b {
+        color: $black-color;
+      }
+    }
+
+    &-tag {
+      font-size: 15px;
+      font-weight: $font-semibold;
+      color: $grey-color;
+    }
+  }
+
+  &__content:nth-child(6) {
+    background-color: $yellow-color;
+  }
+  &__content:nth-child(6) .integrates__content-text {
+    color: $black-color;
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 15px;
+    font-weight: $font-semibold;
+    color: $black-color;
+
+    &-arrow {
+      display: inline-flex;
+      font-size: 1.6rem;
+    }
+  }
+}

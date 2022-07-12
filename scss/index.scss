@@ -516,3 +516,31 @@ img {
     }
   }
 }
+
+// ===== PRESENTATION SECTION =====
+.presentation {
+  padding-bottom: 4rem;
+
+  &__bg {
+    padding-bottom: 7rem;
+    background-color: rgba($color: #f16e6e, $alpha: 0.1);
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: max-content;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__content {
+    text-align: center;
+
+    &-title {
+      font-size: 36px;
+      font-weight: $font-bold;
+      color: $black-color;
+      margin-bottom: 2px;
+    }
+  }
+}

@@ -564,3 +564,94 @@ img {
     background-color: $yellow-color;
   }
 }
+
+// ===== FOOTER SECTION =====
+.footer {
+  padding-top: 8rem;
+
+  &__bg {
+    padding: 7rem 0 2.5rem;
+    background-color: #000b2e;
+  }
+
+  &__container {
+    gap: 6rem;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 4rem;
+  }
+
+  &__data {
+    &-logo {
+      color: $white-color;
+    }
+
+    &-text {
+      color: $grey-color;
+      margin: 0.25rem 0 1.5rem;
+    }
+
+    &-socials {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    &-icon {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 45px;
+      height: 45px;
+      border: 2px solid rgba($color: #6c757d, $alpha: 0.3);
+      border-radius: 50%;
+      font-size: 1.5rem;
+      color: $white-color;
+      transition: $transition-300;
+
+      &:hover {
+        background-color: $white-color;
+        color: #000b2e;
+        border-color: #000b2e;
+      }
+    }
+  }
+
+  &__content {
+    &-title {
+      font-size: 20px;
+      font-weight: $font-semibold;
+      color: $white-color;
+      margin-bottom: $margin-1;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
+    &-link {
+      font-size: 15px;
+      color: $grey-color;
+
+      &:hover {
+        color: $white-color;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__copy {
+    padding-top: 2.5rem;
+    border-top: 2px solid rgba($color: #ffffff, $alpha: 0.2);
+    font-size: 15px;
+    font-weight: $font-medium;
+    color: $grey-color;
+    line-height: $leading-text;
+    text-align: center;
+  }
+}

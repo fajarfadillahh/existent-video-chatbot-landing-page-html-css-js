@@ -324,6 +324,10 @@ img {
     gap: 3rem;
   }
 
+  &__data {
+    justify-self: center;
+  }
+
   &__group {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 0.8fr));
@@ -383,6 +387,10 @@ img {
     gap: 3rem;
   }
 
+  &__data {
+    justify-self: center;
+  }
+
   &__group {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 0.8fr));
@@ -433,6 +441,11 @@ img {
   &__bg {
     padding: 7rem 0;
     background-color: rgba($color: #f16e6e, $alpha: 0.1);
+  }
+
+  &__data {
+    justify-self: center;
+    margin: 0 auto;
   }
 
   &__title {
@@ -685,5 +698,24 @@ img {
   // scroll action
   &.scroll-action {
     bottom: 3rem;
+  }
+}
+
+// ===== MEDIA QUERIES =====
+// width 480px
+@media screen and (min-width: 480px) {
+  .home__data,
+  .features__content-data,
+  .integrates__data,
+  .works__data,
+  .testimonial__data,
+  .callback__data {
+    width: 400px;
+  }
+
+  .home__img,
+  .features__content-img,
+  .callback__img {
+    width: 400px;
   }
 }

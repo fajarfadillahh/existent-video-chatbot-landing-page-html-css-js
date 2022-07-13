@@ -228,6 +228,11 @@ img {
   .show-menu {
     right: 0;
   }
+
+  // sticky header
+  &.sticky-action {
+    box-shadow: 2px 0 12px rgba($color: #000000, $alpha: 0.1);
+  }
 }
 
 // ===== HOME SECTION =====
